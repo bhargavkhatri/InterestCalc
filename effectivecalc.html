@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Effective Interest Calc</title>
+</head>
+<body onload="myFunction()">
+
+    <!-- Heading part -->
+    <section class="hero pb-6" id="hback">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <img src="img1/brand1.PNG">            
+                </div> 
+            </nav>
+       </div> 
+    </section> 
+   
+    <div class="block" id="bback">
+         <div class="container">
+                <div class="columns"> 
+
+                    <!-- Left side bar -->                    
+                    <div class="column">                   
+                        <aside class="menu">
+                            <ul class="menu-list">
+                                <br>
+                                <li><a class="title is-5" id="bold">Tech Brands Colors</a></li>
+                                <hr class="has-background-grey-light my-0 ml-4" id="line">
+                                    <a>
+                                        <table class="table is-narrow" id="tback">                                    
+                                         
+                                                <td><img src="img1/airbnb.png" class="image"></td>
+                                                <td class="content is-small" id="link">Airbnb Colors</td>
+                                            
+                                        </table>
+                                    </a>
+               
+                                    <a>
+                                        <table class="table is-narrow" id="tback">
+                                         
+                                                <td><img src="img1/amazon.png" class="image"></td>
+                                                <td class="content is-small" id="link">Amazon Colors</td>   
+                                            
+                                        </table>
+                                    </a>
+                     
+                            <a>
+                                <table class="table is-narrow" id="tback">     
+                                   
+                                        <td><img src="img1/android.png" class="image"></td>
+                                        <td class="content is-small" id="link">Android Colors</td>
+                                 
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                   
+                                   
+                                        <td><img src="img1/applei.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Apple Colors</td>                               
+                                    
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                             
+                                        <td><img src="img1/facebook.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Facebook Colors</td>                
+                                    
+                                </table>
+                            </a> 
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                                        
+                                        <td><img src="img1/goggle.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Goggle Colors</td>          
+                                    
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                                   
+                                        <td><img src="img1/hp.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">HP Colors</td>                
+                                    
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                                 
+                                        <td><img src="img1/ibm.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">IBM Colors</td>                         
+                                    
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                                   
+                                        <td><img src="img1/insta.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Instagram Colors</td>                        
+                                    
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                                
+                                        <td><img src="img1/Lyft.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Lyft Colors</td>                    
+                                    
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                                   
+                                        <td><img src="img1/messenger.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Messenger Colors</td>
+                                 
+                                </table>
+                            </a>
+                            <a>
+                                <table class="table is-narrow" id="tback">
+                                  
+                                   
+                                        <td><img src="img1/microsoft.PNG" class="image"></td>
+                                        <td class="content is-small" id="link">Microsoft Colors</td>
+                              
+                                </table>
+                            </a>
+
+                       
+                            <li><a class="title is-5" id="bold">Beer Brands Colors</a></li>
+                            <hr class="has-background-grey-light my-0 ml-4" id="line">
+                           
+                            <li><a class="title is-5" id="bold">Clothing Brands Colors</a></li>
+                            <hr class="has-background-grey-light my-0 ml-4" id="line">
+
+                            <li><a class="title is-5" id="bold">Courier Brands Colors</a></li>
+                            <hr class="has-background-grey-light my-0 ml-4" id="line">
+
+                            <li><a class="title is-5" id="bold">Fast Food Brands Colors</a></li>
+                            <hr class="has-background-grey-light my-0 ml-4" id="line">
+
+                            <li><a class="title is-5" id="bold">Soda Brands Colors</a></li>
+                            <hr class="has-background-grey-light my-0 ml-4" id="line">
+
+                            <li><a class="title is-5" id="bold">Tractor Brands Colors</a></li>
+                            <hr class="has-background-grey-light my-0 ml-4" id="line">
+
+
+                        </ul>
+                    </aside>            
+             </div>
+
+             <!-- Right side content -->    
+            
+             <div class="column is-10">
+                <div class="card has-background-white mt-5">   
+                        
+                    <div class="card-content"> 
+                     
+
+                <!-- Interest Calc --> 
+
+                     <div class="column is-9"> 
+                      <div class="card has-background-grey-lighter">
+                        <div  class="card-content">
+                       
+                        <form>
+                          
+                                 <table>
+                                  
+                                      
+
+                                     <tr>
+                                                
+                                        <td>
+                                            <div class="mt-3">
+                                                Nominal annual interest rate:
+                                            </div>     
+                                                    
+                                        </td>     
+                                        <td>
+                                                
+                                            <div class="control ml-5 mt-2">   
+                                                <input class="input is-black" type="number" value="4"  id="nominal_annualrate">
+                                            </div> 
+
+                                        </td>
+                                        <td>
+                                            <div class="ml-2 mt-4"> 
+                                                %
+                                            </div>                                       
+                                        </td>    
+                                        
+                                        <td>
+                                            <div class="ml-2 mt-4"> 
+                                                per year
+                                            </div>                                       
+                                        </td>     
+                                            
+                                    
+                                    </tr>
+
+                                  <tr>
+                                        <td>
+                                            <div class="mt-3">
+                                                Compounding period:
+                                            </div>
+                                            
+                                        </td>
+                       
+                            
+                                            <td>
+                                                <div class="select is-black ml-5 mt-3">
+                                                    <select id="period" onchange="PeriodChange()">
+                                                        <option value="days">Days</option>
+                                                        <option value="weeks">Weeks</option>
+                                                        <option value="months" selected>Months</option>
+                                                        <option value="quarters">Quarters</option>
+                                                        <option value="other">Other</option>
+                                                      </select>                             
+                                                </div> 
+                                            </td>  
+                                     
+                                        
+                                  </tr>
+
+
+                                  <tr>
+                                        <td>
+                                            <div class="mt-3"> 
+                                                Compounding periods per year:
+                                            </div>
+                                        
+                                        </td>
+                                        <td>
+                                            <div class="control ml-5 mt-2">      
+                                                <input class="input is-black" type="number" min="1" max="100" value="12" id="compounding_per_year" onchange="NumChange()"> 
+                                            </div>   
+                                        </td>
+                        
+                                  </tr>
+
+                                  <tr>
+                                      <td></td>
+                                        <td>
+                                            <div class="field is-grouped mt-3 ml-5">
+                                                <p class="control">
+                                                <a class="button is-black is-outlined" onclick="calculate()">
+                                                    Calculate
+                                                </a>
+                                                </p>
+                                                <p class="control">
+                                                  <a class="button is-black is-outlined" onclick="clear1()">Clear                   
+                                                </a>                   
+                                                </p>
+                                            </div>
+                                        </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>
+                                          <div class="mt-3">
+                                            Effective period interest rate:
+                                          </div>
+                                        
+                                      </td>
+                                      <td>
+                                        <div class="control ml-5 mt-2">     
+                                            <input id="effective_period_rate" class="input is-black" type="text" readonly="readonly">
+                                        </div>   
+                                      </td>
+
+                                      <td>
+                                        <div class="ml-2 mt-4"> 
+                                            %
+                                        </div>                                       
+                                    </td>    
+                                    
+                                    <td>
+                                        <div class="ml-2 mt-4" id="effective_period"> 
+                                            per year
+                                        </div>                                       
+                                    </td>     
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                        <div class="mt-3">
+                                            Effective annual interest rate:
+                                        </div>
+                                      
+                                    </td>
+                                    <td>
+                                      <div class="control ml-5 mt-2">     
+                                          <input id="effective_annual_rate" class="input is-black" type="text" readonly="readonly">
+                                      </div>   
+                                    </td>
+
+                                    <td>
+                                        <div class="ml-2 mt-4"> 
+                                            %
+                                        </div>                                       
+                                    </td>    
+                                    
+                                    <td>
+                                        <div class="ml-2 mt-4"> 
+                                            per year
+                                        </div>                                       
+                                    </td>     
+                                </tr>
+
+           
+                                        
+                            </table>                   
+                                                                              
+                         </form>
+                                
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                                         
+                            </div>
+            
+                             
+                                </div>
+                            </div>
+                           
+                          
+                            <br>
+                            <br>
+                            <br>
+                            <br>     
+
+                    </div>        
+               </div>
+            </div>
+
+
+        </div>
+            <br>
+            <br>
+            <br>
+      </div>
+
+
+         <!-- Footer -->    
+       <div class="columns" id="fback">
+        <div class="column is-3"></div>
+
+        
+               <div class="column is-2 mt-6">
+                   <strong><a class="content is-small has-text-grey-light">Amazon color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">Microsoft color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">Xbox One color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">Burger King color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">Red Bull color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">FedEx color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">Levi's color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">John Deere color scheme</a></strong><br>
+                   <strong><a class="content is-small has-text-grey-light">Heineken color scheme</a></strong><br>             
+               </div>
+               <div class="column is-2 mt-6">
+                    <strong><a class="content is-small has-text-grey-light">UPS color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Miller High Life color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Keystone Light color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Busch color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Busch Light color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Uber color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Netflix color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Subway color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Coca-Cola color scheme</a></strong><br>                
+                </div>
+                <div class="column is-2 mt-6">
+                    <strong><a class="content is-small has-text-grey-light">Starbucks color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Pepsi color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">DHL color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Coors Light color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Bud Light color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Johnny Walker color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Android color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Spotify color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">IBM color scheme</a></strong><br>                               
+                </div>
+                <div class="column is-2 mt-6 pb-6">
+                    <strong><a class="content is-small has-text-grey-light">Oracle color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">HP color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Dunkin' Donuts color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Gatorade color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Sprite color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Jim Beam color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">YouTube color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Instagram color scheme</a></strong><br>
+                    <strong><a class="content is-small has-text-grey-light">Twitter color scheme</a></strong><br>      
+                </div>
+                  
+         </div>
+</div>     
+            
+ 
+    <script>
+        function calculate()
+            {
+                
+
+
+                var nominal_annualrate = document.getElementById("nominal_annualrate").value;
+				var compounding_per_year= document.getElementById("compounding_per_year").value;
+				nominal_annualrate  = parseFloat(nominal_annualrate)/100;
+				var periodrate = nominal_annualrate/compounding_per_year*100;
+				var annualrate = (Math.pow((1+nominal_annualrate/compounding_per_year),compounding_per_year)-1)*100;
+				document.getElementById("effective_period_rate").value = periodrate.toFixed(3);
+				document.getElementById("effective_annual_rate").value = annualrate.toFixed(3);
+
+              
+
+                               
+         }
+
+
+            function PeriodChange()
+            
+                
+             {
+                
+                var i = document.getElementById("period").selectedIndex;
+				var period = [365,52,12,4];
+				var time = ['per day','per week','per month','per quarter',''];
+				document.getElementById("compounding_per_year").value = period[i];
+				document.getElementById("effective_period").innerHTML = time[i];
+
+            }
+
+
+            function NumChange()
+			{
+				var nperiod = document.getElementById("compounding_per_year").value;
+				var txt = '';
+				var i = 4;
+				if( nperiod=='365' ) {txt='per day'; i=0;}
+				if( nperiod=='52' )  {txt='per week'; i=1;}
+				if( nperiod=='12' )  {txt='per month'; i=2;}
+				if( nperiod=='4' )	 {txt='per quarter'; i=3;}
+				document.getElementById("effective_period").innerHTML = txt;
+				document.getElementById("period").selectedIndex = i;
+			}
+            
+
+                function clear1() 
+                {                 
+                 
+                  document.getElementById("effective_period_rate").value = '';
+                  document.getElementById("effective_annual_rate").value = '';
+                
+                 
+                }
+
+              
+
+    </script>
+   
+  
+
+</body>
+</html>
